@@ -3,9 +3,9 @@
 - Build a small Kubernetes environment locally.  Please use whatever local k8s environment you would like (KiND, minikube, etc)
 - Build Docker files for both sample applications (applications must return correct results)
 - Use pulumi to deploy the pods to the cluster.  Please use whatever programming language you are most familiar with.
-- Ensure the api microservice is exposed and reachable internally.   Communication to the jobs microservice should be available from the api microservice
+- Ensure the api microservice is exposed and reachable externally (ie: we should be able to access the api microservice from the laptop we are running it on).   Communication to the jobs microservice should be available from the api microservice
 - Ensure the `JOBS_SERVICE` env var is present in the api container
-- Make the process as automatable as possible.  shell scripts, Makefiles, etc. are all acceptable.
+- Make the process as automated as possible.  shell scripts, Makefiles, etc. are all acceptable.
 - Please include instructions in the README.md for running the setup
 
 # Bonus points
