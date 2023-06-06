@@ -13,4 +13,3 @@ RUN apt install sqlite3
 
 RUN ["chmod", "+x", "rnscript.sh"]
 ENTRYPOINT ["./rnscript.sh"]
-
