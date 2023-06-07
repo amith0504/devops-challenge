@@ -1,0 +1,2 @@
+config:
+  pulumi2:cluster: 'kind '
