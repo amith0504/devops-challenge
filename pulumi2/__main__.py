@@ -57,7 +57,7 @@ deployment2 = kubernetes.apps.v1.Deployment("api",
             ),
             spec=kubernetes.core.v1.PodSpecArgs(
                 containers=[kubernetes.core.v1.ContainerArgs(
-                    image="amith0504/api:4",
+                    image="amith0504/api:8",
                     name="api",
                     ports=[kubernetes.core.v1.ContainerPortArgs(
                         container_port=5000,
@@ -72,7 +72,7 @@ devops_challenge_service = kubernetes.core.v1.Service("devops-challenge-service"
         selector={
             "app": "jobs",
         },
-        type="LoadBalancer",
+        type="ClusterIP",
         ports=[
             kubernetes.core.v1.ServicePortArgs(
                 port=5001,
@@ -88,7 +88,7 @@ api_service = kubernetes.core.v1.Service("api-service",
         selector={
             "app": "api",
         },
-        type="LoadBalancer",
+        type="ClusterIP",
          ports=[
             kubernetes.core.v1.ServicePortArgs(
                 port=5000,
