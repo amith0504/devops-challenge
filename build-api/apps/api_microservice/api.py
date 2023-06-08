@@ -15,7 +15,7 @@ def hello():
 
 @app.route("/jobs", methods=["GET"])
 def jobs():
-    result = requests.get(f"http://10.96.240.78:5001/jobs").content
+    result = requests.get(f"http://JOBS_SERVICE:5001/jobs").content
     return result
 
 

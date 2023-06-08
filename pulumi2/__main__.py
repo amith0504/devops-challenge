@@ -57,7 +57,7 @@ deployment2 = kubernetes.apps.v1.Deployment("api",
             ),
             spec=kubernetes.core.v1.PodSpecArgs(
                 containers=[kubernetes.core.v1.ContainerArgs(
-                    image="amith0504/api:8",
+                    image="amith0504/api:9",
                     name="api",
                     ports=[kubernetes.core.v1.ContainerPortArgs(
                         container_port=5000,
