@@ -3,7 +3,9 @@
    hardcoded the IP in the JOBS_SERVICE environmental variable. 
 3. Push the docker images to dockerhub.
 4. Run the pulumi up command to deploy the application in kuberenetes application. Pulumi context can be set to use kind (local docker environment) and set the context for namespace in k8s
-5. api and jobs service can be accessed both 127.0.0.1:5000/hello and 127.0.0.1:5000/jobs respectively, where jobs service is called from api service internally. 
+
+this two images are pushed to dockerhub and it is pulled by pulumi automatically amith0504/api:15 and amith0504/jobs:1
+6. api and jobs service can be accessed both 127.0.0.1:5000/hello and 127.0.0.1:5000/jobs respectively, where jobs service is called from api service internally. 
 
 **API for hello server **
 
