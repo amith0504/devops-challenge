@@ -27,7 +27,7 @@ $ curl -vvv 127.0.0.1:5000/hello
 * Closing connection 0
 Hello there
 
-**API for jobs service **
+ **API for jobs service **
 
 $ curl -vvv 127.0.0.1:5000/jobs
 *   Trying 127.0.0.1:5000...
