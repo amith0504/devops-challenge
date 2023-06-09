@@ -48,6 +48,7 @@ $ curl -vvv 127.0.0.1:5000/jobs
 * Closing connection 0
 
 7. Metrics is exposed to the app in 127.0.0.1:5000/metrics after port forwarding the api service in local machine we can access this .
+**API for metrics service **
 
 curl -vvv 127.0.0.1:5000/metrics
 *   Trying 127.0.0.1:5000...
