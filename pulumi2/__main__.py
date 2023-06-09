@@ -25,7 +25,7 @@ deployment1 = kubernetes.apps.v1.Deployment("jobs",
             ),
             spec=kubernetes.core.v1.PodSpecArgs(
                 containers=[kubernetes.core.v1.ContainerArgs(
-                    image="amith0504/devops-challenge:25",
+                    image="amith0504/jobs:1",
                     name="jobs",
                     ports=[kubernetes.core.v1.ContainerPortArgs(
                         container_port=5001,
@@ -57,7 +57,7 @@ deployment2 = kubernetes.apps.v1.Deployment("api",
             ),
             spec=kubernetes.core.v1.PodSpecArgs(
                 containers=[kubernetes.core.v1.ContainerArgs(
-                    image="amith0504/api:9",
+                    image="amith0504/api:15",
                     name="api",
                     ports=[kubernetes.core.v1.ContainerPortArgs(
                         container_port=5000,
@@ -67,7 +67,7 @@ deployment2 = kubernetes.apps.v1.Deployment("api",
         ),
     ))
 
-devops_challenge_service = kubernetes.core.v1.Service("devops-challenge-service",
+devops_challenge_service = kubernetes.core.v1.Service("jobs-service",
     spec=kubernetes.core.v1.ServiceSpecArgs(
         selector={
             "app": "jobs",
